@@ -19,7 +19,17 @@ const Navbar = () => (
   >
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" height={45} />
-      <Typography p={2} variant="subtitle1" fontWeight="bold" color="#FFF">
+      <Typography
+        p={2}
+        sx={{
+          visibility: { xs: "hidden", sm: "hidden", md: "visible" },
+
+          px: { md: 2 },
+        }}
+        variant="subtitle2"
+        fontWeight="bold"
+        color="#FFF"
+      >
         Jorge Santé
       </Typography>
     </Link>
