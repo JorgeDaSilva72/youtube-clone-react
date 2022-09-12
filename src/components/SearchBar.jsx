@@ -22,12 +22,13 @@ const SearchBar = () => {
       component="form"
       onSubmit={onhandleSubmit}
       sx={{
+        display: "flex",
+        justifyContent: "flex-start",
         borderRadius: 20,
         border: "1px solid #e3e3e3",
         pl: 2,
         boxShadow: "none",
-        mr: { sm: 5 },
-        width: "auto",
+        mr: { xs: 20 },
       }}
     >
       <input
@@ -38,7 +39,7 @@ const SearchBar = () => {
       />
       <IconButton
         type="submit"
-        sx={{ p: "10px", color: "red" }}
+        sx={{ p: "5px", color: "red" }}
         aria-label="search"
       >
         <SearchIcon />

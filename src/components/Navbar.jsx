@@ -9,7 +9,7 @@ const Navbar = () => (
   <Stack
     direction="row"
     alignItems="center"
-    p={2}
+    p={0}
     sx={{
       position: "sticky",
       background: "#000",
@@ -18,7 +18,12 @@ const Navbar = () => (
     }}
   >
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
-      <img src={logo} alt="logo" height={45} />
+      <img
+        src={logo}
+        alt="logo"
+        height={45}
+        sx={{ height: { xs: "20", sm: "25", md: "45" } }}
+      />
       <Typography
         p={2}
         sx={{
